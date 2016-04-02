@@ -22,6 +22,32 @@ $(function(){
   });
 
 
+/* ==============================================
+	img Hover
+=============================================== */	
+
+$('#one').mouseover(function() {
+
+    // increase the 500 to larger values to lengthen the duration of the fadeout 
+       // and/or fadein
+    $('#one').fadeOut(500, function() {
+        $('#one').attr("src","img/derboy.png");
+        $('#one').fadeIn(500);
+    });
+
+});
+
+$('#one').mouseout(function() {
+
+    // increase the 500 to larger values to lengthen the duration of the fadeout 
+       // and/or fadein
+    $('#one').fadeOut(500, function() {
+        $('#one').attr("src","img/portrait-sample.gif");
+        $('#one').fadeIn(500);
+    });
+
+});
+
 	
 });
 /* end ready function */
